@@ -194,10 +194,39 @@
   --color-surface-elevated: var(--surface-elevated);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
 }
 
 @utility hero-gradient {
   background-image: var(--gradient-hero);
+}
+
+@utility glass-gradient {
+  background-image: var(--gradient-glass);
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--primary) 70%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+}
+
+@utility glow-line {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--accent) 90%, white 25%),
+    transparent
+  );
+}
+
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
 }
 
 @utility text-gradient {
