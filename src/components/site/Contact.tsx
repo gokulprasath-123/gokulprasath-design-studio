@@ -32,10 +32,10 @@ const items = [
 export function Contact() {
   return (
     <section id="contact" className="hero-gradient scroll-mt-24 py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-5">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="max-w-2xl">
-          <p className="text-sm tracking-[0.2em] text-primary uppercase">Contact</p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+          <p className="label-mono text-primary">Contact</p>
+          <h2 className="mt-5 font-display text-4xl tracking-tight sm:text-5xl">
             Let's build your website together
           </h2>
           <p className="mt-4 text-muted-foreground">
@@ -56,10 +56,8 @@ export function Contact() {
                   <item.icon className="size-5" />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-xs tracking-wide text-muted-foreground uppercase">
-                    {item.label}
-                  </span>
-                  <span className="block truncate font-medium">{item.value}</span>
+                  <span className="label-mono block text-muted-foreground">{item.label}</span>
+                  <span className="mt-1 block truncate font-mono text-sm">{item.value}</span>
                 </span>
               </a>
             </Reveal>

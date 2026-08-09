@@ -4,10 +4,10 @@ import { Reveal } from "./Reveal";
 
 export function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:py-28">
+    <section id="projects" className="mx-auto max-w-7xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
       <Reveal className="max-w-2xl">
-        <p className="text-sm tracking-[0.2em] text-primary uppercase">Projects</p>
-        <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">Selected work</h2>
+        <p className="label-mono text-primary">Projects</p>
+        <h2 className="mt-5 font-display text-4xl tracking-tight sm:text-5xl">Selected work</h2>
         <p className="mt-4 text-muted-foreground">
           Placeholder previews for now — real client projects go here as they launch.
         </p>
@@ -26,7 +26,7 @@ export function Projects() {
                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-lg font-semibold">{p.name}</h3>
+                <h3 className="font-display text-2xl tracking-tight">{p.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {p.description}
                 </p>
@@ -34,7 +34,7 @@ export function Projects() {
                   {p.tech.map((t) => (
                     <li
                       key={t}
-                      className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+                      className="rounded-full border border-border px-3 py-1 font-mono text-[0.7rem] text-muted-foreground"
                     >
                       {t}
                     </li>
@@ -42,9 +42,9 @@ export function Projects() {
                 </ul>
                 <a
                   href={p.link}
-                  className="mt-6 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-transform hover:translate-x-0.5"
+                  className="label-mono mt-6 inline-flex items-center gap-2 self-start text-primary transition-transform hover:translate-x-0.5"
                 >
-                  View Live <ExternalLink className="size-4" />
+                  View live <ExternalLink className="size-3.5" />
                 </a>
               </div>
             </article>
