@@ -2,11 +2,11 @@ import { Reveal } from "./Reveal";
 
 export function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:py-28">
+    <section id="about" className="mx-auto max-w-7xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
       <div className="grid gap-12 lg:grid-cols-[0.85fr_1fr] lg:gap-20">
         <Reveal>
-          <p className="text-sm tracking-[0.2em] text-primary uppercase">About me</p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+          <p className="label-mono text-primary">About me</p>
+          <h2 className="mt-5 font-display text-4xl tracking-tight sm:text-5xl">
             Design that helps small businesses look established online.
           </h2>
         </Reveal>
