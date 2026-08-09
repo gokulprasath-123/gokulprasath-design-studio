@@ -11,10 +11,12 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border py-12">
-      <div className="mx-auto grid max-w-6xl gap-8 px-5 sm:grid-cols-[1fr_auto] sm:items-center">
+      <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:grid-cols-[1fr_auto] sm:items-center sm:px-8">
         <div className="min-w-0">
-          <p className="font-display text-lg font-semibold">Gokulprasath</p>
-          <p className="mt-1 text-sm text-muted-foreground">Freelance Web Designer</p>
+          <p className="font-display text-2xl tracking-tight">
+            Gokul<span className="text-primary">prasath.</span>
+          </p>
+          <p className="label-mono mt-2 text-muted-foreground">Freelance web designer</p>
         </div>
         <ul className="flex gap-3">
           {socials.map((s) => (
