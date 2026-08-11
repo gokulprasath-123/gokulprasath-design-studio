@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { projects } from "@/data/site";
 import { Reveal } from "./Reveal";
 
@@ -40,12 +40,33 @@ export function Projects() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={p.link}
-                  className="mt-6 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-transform hover:translate-x-0.5"
-                >
-                  View Live <ExternalLink className="size-4" />
-                </a>
+                {p.liveUrl && p.githubUrl ? (
+                  <div className="mt-6 flex flex-wrap items-center gap-5">
+                    <a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-transform hover:translate-x-0.5"
+                    >
+                      Live Demo <ExternalLink className="size-4" />
+                    </a>
+                    <a
+                      href={p.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition-transform hover:translate-x-0.5 hover:text-primary"
+                    >
+                      View Code <Github className="size-4" />
+                    </a>
+                  </div>
+                ) : (
+                  <a
+                    href={p.link}
+                    className="mt-6 inline-flex items-center gap-2 self-start text-sm font-semibold text-primary transition-transform hover:translate-x-0.5"
+                  >
+                    View Live <ExternalLink className="size-4" />
+                  </a>
+                )}
               </div>
             </article>
           </Reveal>
