@@ -1,6 +1,7 @@
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4-newleaf-clinic.svg";
 
 /** Contact details — edit these in one place. */
 export const contact = {
@@ -16,6 +17,10 @@ export const contact = {
 /**
  * Projects list. To add a real project: copy one object, change the text,
  * drop your image in src/assets and import it above.
+ *
+ * liveUrl + githubUrl are optional — when both are set, the card shows
+ * separate "Live Demo" and "View Code" buttons instead of the single
+ * "View Live" link.
  */
 export const projects = [
   {
@@ -41,6 +46,16 @@ export const projects = [
     tech: ["UI/UX", "Figma", "CSS"],
     image: project3,
     link: "#contact",
+  },
+  {
+    name: "NewLeaf Clinic — Regenerative Medicine",
+    description:
+      "An immersive, 3D-animated website for a regenerative and integrative medicine clinic, with smooth Lenis-powered scrolling, interactive Three.js visuals and a clean, premium clinical UI.",
+    tech: ["React", "Three.js", "Tailwind CSS"],
+    image: project4,
+    link: "https://newleafclinic.vercel.app/",
+    liveUrl: "https://newleafclinic.vercel.app/",
+    githubUrl: "https://github.com/gokulprasath-123/clinic-web-",
   },
 ];
 
