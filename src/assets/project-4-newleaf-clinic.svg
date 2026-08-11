@@ -1,0 +1,47 @@
+<svg width="1280" height="960" viewBox="0 0 1280 960" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151f30"/>
+      <stop offset="100%" stop-color="#1c2942"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="15%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#5fd8e0" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#5fd8e0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="95%" cy="15%" r="70%">
+      <stop offset="0%" stop-color="#e0b46a" stop-opacity="0.22"/>
+      <stop offset="62%" stop-color="#e0b46a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="960" fill="url(#bg)"/>
+  <rect width="1280" height="960" fill="url(#glow1)"/>
+  <rect width="1280" height="960" fill="url(#glow2)"/>
+
+  <!-- browser chrome -->
+  <rect x="120" y="140" width="1040" height="680" rx="18" fill="#20304a" opacity="0.9"/>
+  <rect x="120" y="140" width="1040" height="680" rx="18" fill="url(#cardline)"/>
+  <rect x="120" y="140" width="1040" height="56" rx="18" fill="#26385580"/>
+  <circle cx="156" cy="168" r="7" fill="#5fd8e0" opacity="0.85"/>
+  <circle cx="180" cy="168" r="7" fill="#e0b46a" opacity="0.85"/>
+  <circle cx="204" cy="168" r="7" fill="#8892a6" opacity="0.6"/>
+  <rect x="240" y="158" width="420" height="20" rx="10" fill="#0f1826" opacity="0.7"/>
+
+  <!-- abstract 3d blobs suggesting a 3d animated hero -->
+  <ellipse cx="420" cy="430" rx="150" ry="150" fill="#5fd8e0" opacity="0.16"/>
+  <ellipse cx="420" cy="430" rx="95" ry="95" fill="#5fd8e0" opacity="0.30"/>
+  <ellipse cx="770" cy="520" rx="120" ry="120" fill="#e0b46a" opacity="0.14"/>
+  <ellipse cx="770" cy="520" rx="70" ry="70" fill="#e0b46a" opacity="0.26"/>
+
+  <!-- content lines -->
+  <rect x="200" y="640" width="300" height="22" rx="6" fill="#f4f6fa" opacity="0.85"/>
+  <rect x="200" y="678" width="460" height="14" rx="5" fill="#aeb8c9" opacity="0.55"/>
+  <rect x="200" y="702" width="380" height="14" rx="5" fill="#aeb8c9" opacity="0.45"/>
+  <rect x="200" y="740" width="150" height="36" rx="18" fill="#5fd8e0" opacity="0.85"/>
+
+  <text x="640" y="880" font-family="Sora, ui-sans-serif, sans-serif" font-size="26" font-weight="600" fill="#f4f6fa" text-anchor="middle" opacity="0.9">NewLeaf Clinic — Live Preview</text>
+</svg>
